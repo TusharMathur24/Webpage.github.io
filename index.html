@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGHT ON - The Blind Aid Bot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #fdfcfb;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #dfe9f3, #ffffff);
+            color: #2c3e50;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 3rem auto;
+            max-width: 1200px;
+            gap: 2rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            width: 280px;
+        }
+
+        .card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .card p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta a {
+            text-decoration: none;
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            transition: background 0.3s ease-in-out, transform 0.3s;
+            display: inline-block;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta a:hover {
+            background: #34495e;
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: #ffffff;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SIGHT ON</h1>
+        <p>Empowering visually disabled individuals with a revolutionary AI-powered mobility aid for safer, independent navigation.</p>
+    </header>
+
+    <section class="container">
+        <div class="card">
+            <h3>Problem We Address</h3>
+            <p>SIGHT ON overcomes the limitations of traditional aids, offering advanced technology to enhance mobility and independence.</p>
+        </div>
+        <div class="card">
+            <h3>Key Features</h3>
+            <p>Object detection, real-time alerts, and user-friendly design make it a breakthrough for visually impaired users.</p>
+        </div>
+        <div class="card">
+            <h3>How It Works</h3>
+            <p>AI and proximity sensors detect obstacles, ensuring accurate and timely alerts for safer navigation.</p>
+        </div>
+        <div class="card">
+            <h3>Impact</h3>
+            <p>Improves safety, promotes independence, and offers an affordable, scalable solution for global accessibility.</p>
+        </div>
+    </section>
+
+    <div class="cta">
+        <a href="#">Explore More</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 SIGHT ON | Designed to Inspire</p>
+    </footer>
+</body>
+</html>
